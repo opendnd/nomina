@@ -1,0 +1,42 @@
+{
+  "name": "nomina",
+  "version": "0.1.0",
+  "description": "A tool for generating names for characters with a wide variety",
+  "main": "lib/nomina.js",
+  "bin": {
+    "nomina": "./bin/nomina"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opendnd/nomina.git"
+  },
+  "author": "Drew Morris <dhmorris@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opendnd/nomina/issues"
+  },
+  "homepage": "https://github.com/opendnd/nomina#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "start": "node ./lib/nomina.js",
+    "test": "npm run test:mocha && npm run test:lint",
+    "test:mocha": "./node_modules/mocha/bin/mocha --reporter spec 'test/**/*.js'",
+    "test:lint": "./node_modules/eslint/bin/eslint.js ."
+  },
+  "keywords": [
+    "name",
+    "generator",
+    "opendnd",
+    "dnd",
+    "d&d"
+  ]
+}
