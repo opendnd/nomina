@@ -9,6 +9,7 @@
     "no-extend-native": 0,
     "func-names": 0,
     "no-bitwise": 0,
-    "global-require": 0
+    "global-require": 0,
+    "strict": 0
   }
 }
