@@ -1,4 +1,5 @@
 {
-  "male": ["Ao", "Bang", "Buwei", "Changdong", "Chao", "Fuling", "Gao", "Guang", "He", "Hu Hai", "Jizi", "Ju", "Kang", "Long", "Lun", "Mang", "Qi", "Qian", "Qing", "She", "Sheng", "Si", "Tian", "Wan", "Xian", "Xie", "Xin", "Xing", "Yang", "Ying", "Yu", "Yuan", "Yun", "Zhao", "Zheng", "Zhuang Xiang", "Zhuo", "Ziying"],
-  "female": ["Feiyan", "Hou", "Ji", "Jiangnu", "Lihua", "Na", "Shengtong", "Zhi"]
+  "male": ["Ao", "Bang", "Buwei", "Changdong", "Chao", "Fuling", "Gao", "Guang", "He", "Hai", "Jizi", "Ju", "Kang", "Long", "Lun", "Mang", "Qi", "Qian", "Qing", "She", "Sheng", "Si", "Tian", "Wan", "Xian", "Xie", "Xin", "Xing", "Yang", "Ying", "Yu", "Yuan", "Yun", "Zhao", "Zheng", "Xiang", "Zhuo", "Ziying"],
+  "female": ["Feiyan", "Hou", "Ji", "Jiangnu", "Lihua", "Na", "Shengtong", "Zhi", "Ikumi", "Junko", "Katsuko", "Mayumi", "Miwa", "Chinami", "Atsumi", "Fukumi", "Rika", "Yoshino", "Sakie", "Yurina", "Tomoka", "Natsume", "Reika", "Runa", "Yukari"],
+  "dominia": ["Beijing", "Nanjing", "Luoyang", "Anyang", "Kaifeng", "Hangzhou", "Yanan", "Xian", "Lhasa", "Suzhou", "Macau", "Kyoto", "Kawagoe", "Oharaimachi", "Ryukyu"]
 }
