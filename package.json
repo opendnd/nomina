@@ -1,6 +1,6 @@
 {
   "name": "nomina",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A tool for generating names for characters with a wide variety",
   "main": "lib/nomina.js",
   "bin": {
