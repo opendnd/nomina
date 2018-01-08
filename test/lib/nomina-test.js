@@ -12,8 +12,8 @@ describe('nomina', () => {
   describe('bin', () => {
     before((done) => {
       const options = [
-        '--type', 'medieval', 
-        '--gender', 'female'
+        '--theme', 'medieval', 
+        '--type', 'female'
       ];
       nomina = spawn(path.join(binDir, 'nomina'), options);
 
@@ -38,8 +38,8 @@ describe('nomina', () => {
 
     it('outputs a name', () => {
       const options = {
-        type: 'medieval',
-        gender: 'female'
+        theme: 'medieval',
+        type: 'female'
       };
 
       const result = nomina(options);
