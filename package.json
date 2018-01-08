@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/opendnd/nomina#readme",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.12.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",

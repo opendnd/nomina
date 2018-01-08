@@ -6,6 +6,7 @@ const libDir = path.join(rootDir, 'lib');
 const binDir = path.join(rootDir, 'bin');
 const spawn = require('child_process').spawn;
 let nomina;
+let Nomina;
 let output = '';
 
 describe('nomina', () => {
@@ -33,7 +34,7 @@ describe('nomina', () => {
 
   describe('module', () => {
     before(() => {
-      nomina = require(path.join(libDir, 'nomina'));
+      Nomina = require(path.join(libDir, 'nomina'));
     });
 
     it('outputs a name', () => {
@@ -42,7 +43,7 @@ describe('nomina', () => {
         type: 'female'
       };
 
-      const result = nomina(options);
+      const result = Nomina.generate(options);
       expect(result.length).to.be.above(1);
     });
   });
