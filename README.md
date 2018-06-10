@@ -36,6 +36,7 @@ You can specify a gender by setting either `male` or `female` (or for convenienc
 
 ```javascript
 const Nomina = require('nomina');
+const nomina = new Nomina();
 
 // specify options, none are required
 const options = {
@@ -44,10 +45,40 @@ const options = {
 };
 
 // call the method
-const result = Nomina.generate(options);
+const result = nomina.generate(options);
 
 // get all themes available
-const themes = Nomina.getThemes();
+const themes = nomina.getThemes();
+```
+
+## Custom Configs
+There are a couple of ways you can configure the themes that the tool uses:
+
+### CLI Config
+The CLI checks for `~/.dnd/nomina/defaults.js` before loading any other configuration. Simply add a file here while using the tool and you can customize the themes.
+
+### Class Config
+You can pass a "defaults" config directly to the class on initialization:
+
+```javascript
+const Nomina = require('nomina');
+const defaults = {
+  themes: {
+    myCustomTheme: {
+      male: [],
+      female: [],
+      dominia: [],
+    },
+    myOtherCustomTheme: {
+      male: [],
+      female: [],
+      dominia: [],
+    },
+  },
+};
+
+const nomina = new Nomina({ defaults });
+const themes = nomina.getThemes(); // ['myCustomTheme', 'myOtherCustomTheme']
 ```
 
 ## Developing
