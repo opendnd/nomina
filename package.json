@@ -52,5 +52,8 @@
     "opendnd",
     "dnd",
     "d&d"
-  ]
+  ],
+  "directories": {
+    "test": "test"
+  }
 }
