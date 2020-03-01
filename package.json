@@ -1,10 +1,21 @@
 {
-  "name": "nomina",
+  "name": "@opendnd/nomina",
   "version": "0.4.3",
   "description": "A tool for generating names for characters with a wide variety",
-  "main": "lib/nomina.js",
+  "main": "dist/nomina.js",
   "bin": {
     "nomina": "./bin/nomina"
+  },
+  "scripts": {
+    "start": "bin/nomina",
+    "prebuild": "rimraf dist",
+    "build": "tsc --declaration",
+    "prepublish": "npm run build",
+    "lint": "tslint src/**/*.ts",
+    "env:dev": "cross-env NODE_ENV=development",
+    "env:prod": "cross-env NODE_ENV=production",
+    "test": "mocha -c -S -R spec --compilers ts:ts-node/register",
+    "test:watch": "yarn test -- -w"
   },
   "repository": {
     "type": "git",
@@ -17,20 +28,23 @@
   },
   "homepage": "https://github.com/opendnd/nomina#readme",
   "dependencies": {
+    "@opendnd/core": "^0.2.7",
     "commander": "^2.12.2"
   },
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.1",
     "chai": "^3.5.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.12.0",
-    "mocha": "^5.2.0"
-  },
-  "scripts": {
-    "start": "node ./lib/nomina.js",
-    "test": "npm run test:mocha && npm run test:lint",
-    "test:mocha": "./node_modules/mocha/bin/mocha --reporter spec 'test/**/*.js'",
-    "test:lint": "./node_modules/eslint/bin/eslint.js ."
+    "mocha": "^5.2.0",
+    "rimraf": "^2.6.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.4",
+    "yarn": "^1.10.1"
   },
   "keywords": [
     "name",
