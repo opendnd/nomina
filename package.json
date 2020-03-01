@@ -1,6 +1,6 @@
 {
   "name": "@opendnd/nomina",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "A tool for generating names for characters with a wide variety",
   "main": "dist/nomina.js",
   "bin": {
